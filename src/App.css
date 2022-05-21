@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: #F5F5F5 !important;
+}
+.navbar-container{
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-container > .navbar-logo{
+    flex: 80%;  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-logo > img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;  
+}
+.navbar-icons {
+    flex: 20%;
+}
+.navbar-logo > span{
+    position: absolute;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.4rem;
+}
+.navbar-icons > :first-child{
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-icons > :last-child{
+    width: 50px;
+    height: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 1000px) {
+  
+    .navbar-logo{
+        flex: 70%;
+    }
+    .navbar-icons{
+        flex: 30%;
+    }
+    .navbar-logo > span{
+        visibility: hidden;
+    }
+    .navbar-logo > img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 100px;  
+    }
+   
+    /* .navbar-logo > span {
+        visibility: hidden;
+    } */
+    .navbar-icons > :first-child {
+        width: 2rem;
+        height: 2rem;
+    }
+    .navbar-icons > :last-child {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media (max-width: 483px){
+    .navbar-logo{
+        flex: 20%;
+    }
+    .navbar-icons{
+        flex: 80%;
+    }
 }
