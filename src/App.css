@@ -34,52 +34,131 @@ body{
     font-weight: 600;
     letter-spacing: 0.4rem;
 }
-.navbar-icons > :first-child{
-    width: 50px;
-    height: 50px;
-    margin-right: 50px;
+#favorites-icon{
+    width: 3rem;
+    height: 3rem;
 }
 
-.navbar-icons > :last-child{
-    width: 50px;
-    height: 50px;
+#cart-icon{
+    width: 3rem;
+    height: 3rem;
 }
 
-@media (max-width: 1000px) {
+.badge {
+    padding-left: 1rem;
+    padding-right: 10rem;
+    border-radius: 10rem;
+}
+
+
+
+#lblCartCount {
+    font-size: 20px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px; 
+}
+
+.space-between {
+    padding: 0 2rem;
+}
+
+.cart {
+    cursor: pointer;
+}
+
+.cart span:nth-child(2) , span:nth-child(5){
+    padding: 0 0.4rem;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    position: relative;
+    top: -1.2rem;
+}
+
+@media (max-width: 448px){
+    .navbar-logo > span{
+        visibility: hidden;
+    }
+    .navbar-logo{
+        flex: 10% !important;
+    }
+    .navbar-icons{
+        flex: 20% !important;
+    }
   
+}
+
+@media (max-width: 483px){
+    .navbar-logo > span{
+        visibility: hidden;
+    }
+    .navbar-logo{
+        flex: 20% !important;
+    }
+    .navbar-icons{
+        flex: 50% !important;
+    }
+}
+
+@media (max-width: 770px){
+    .navbar-logo > span{
+        visibility: hidden;
+    }
+  
+    .navbar-logo{
+        flex: 40% !important;
+    }
+    .navbar-icons{
+        flex:10% !important;
+    }
+
+  
+}
+
+@media (max-width: 1204px){
+    .cart span:nth-child(2) , span:nth-child(5){
+        padding: 0 0.4rem !important;
+      
+        top: -1rem !important;
+    }
+    .space-between {
+        padding: 0 1rem !important;
+    }
+}
+
+@media (max-width: 1024px ) {
+    .cart span:nth-child(2) , span:nth-child(5){
+        padding: 0 0.1rem;
+        font-size: 1rem;
+        top: -1rem;
+    }
+    .space-between {
+        padding: 0 1.5rem;
+    }
     .navbar-logo{
         flex: 70%;
     }
     .navbar-icons{
         flex: 30%;
     }
-    .navbar-logo > span{
-        visibility: hidden;
-    }
+    
     .navbar-logo > img {
         width: 5rem;
         height: 5rem;
         border-radius: 100px;  
     }
    
-    /* .navbar-logo > span {
-        visibility: hidden;
-    } */
-    .navbar-icons > :first-child {
+    #favorites-icon {
         width: 2rem;
         height: 2rem;
     }
-    .navbar-icons > :last-child {
+    #cart-icon {
         width: 2rem;
         height: 2rem;
-    }
-}
-
-@media (max-width: 483px){
-    .navbar-logo{
-        flex: 20%;
-    }
-    .navbar-icons{
-        flex: 80%;
     }
 }

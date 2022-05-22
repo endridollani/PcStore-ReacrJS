@@ -19,8 +19,15 @@ const Header = () => {
             <span>PC STORE</span>
           </Navbar.Brand>
           <span className="navbar-icons">
-            <AiOutlineHeart></AiOutlineHeart>
-            <AiOutlineShoppingCart></AiOutlineShoppingCart>
+            <div className="cart">
+                <span>
+                    <AiOutlineHeart id="favorites-icon"></AiOutlineHeart>
+                </span>
+                <span>0</span>
+                <span className="space-between"></span>
+                <span><AiOutlineShoppingCart id="cart-icon"></AiOutlineShoppingCart></span>
+                <span>0</span>
+            </div>
           </span>
         </Container>
       </Navbar>
