@@ -20,13 +20,19 @@ const Header = () => {
           </Navbar.Brand>
           <span className="navbar-icons">
             <div className="cart">
-                <span>
-                    <AiOutlineHeart id="favorites-icon"></AiOutlineHeart>
-                </span>
-                <span>0</span>
-                <span className="space-between"></span>
-                <span><AiOutlineShoppingCart id="cart-icon"></AiOutlineShoppingCart></span>
-                <span>0</span>
+              <span>
+                <a href="/">
+                  <AiOutlineHeart id="favorites-icon"></AiOutlineHeart>
+                </a>
+              </span>
+              <span>0</span>
+              <span className="space-between"></span>
+              <span>
+                <a href="/">
+                  <AiOutlineShoppingCart id="cart-icon"></AiOutlineShoppingCart>
+                </a>
+              </span>
+              <span>0</span>
             </div>
           </span>
         </Container>
