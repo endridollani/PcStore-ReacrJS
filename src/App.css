@@ -84,11 +84,17 @@ body{
     .navbar-logo > span{
         visibility: hidden;
     }
-    .navbar-logo{
-        flex: 10% !important;
+    .cart span:nth-child(2) , span:nth-child(5){
+        font-size: 0.2rem;
+        top: -0.2rem;
     }
-    .navbar-icons{
-        flex: 20% !important;
+    #favorites-icon {
+        width: 1rem !important;
+        height: 1rem !important;
+    }
+    #cart-icon {
+        width: 1rem !important;
+        height: 1rem !important;
     }
   
 }
@@ -148,9 +154,9 @@ body{
     }
     
     .navbar-logo > img {
-        width: 5rem;
-        height: 5rem;
-        border-radius: 100px;  
+        width: 5rem !important;
+        height: 5rem !important;
+        border-radius: 100px !important;  
     }
    
     #favorites-icon {
