@@ -22,10 +22,10 @@ const ProductSection = () => {
               </div>
               <div className="product-price">200$</div>
               <div className="preferences">
-                <a className="add-to-favorites" href="/">
+                <a className="add-to-favorites" href="/favorites">
                   <i className="fas fa-heart"></i>
                 </a>
-                <a className="add-to-card" href="/">
+                <a className="add-to-card" href="/shoopingCart">
                   <i className="fas fa-shopping-cart"></i>
                 </a>
               </div>
@@ -48,10 +48,10 @@ const ProductSection = () => {
               </div>
               <div className="product-price">200$</div>
               <div className="preferences">
-                <a className="add-to-favorites" href="/">
+                <a className="add-to-favorites" href="/favorites">
                   <i className="fas fa-heart"></i>
                 </a>
-                <a className="add-to-card" href="/">
+                <a className="add-to-card" href="/shoopingCart">
                   <i className="fas fa-shopping-cart"></i>
                 </a>
               </div>
@@ -74,10 +74,10 @@ const ProductSection = () => {
               </div>
               <div className="product-price">200$</div>
               <div className="preferences">
-                <a className="add-to-favorites" href="/">
+                <a className="add-to-favorites" href="/favorites">
                   <i className="fas fa-heart"></i>
                 </a>
-                <a className="add-to-card" href="/">
+                <a className="add-to-card" href="/shoopingCart">
                   <i className="fas fa-shopping-cart"></i>
                 </a>
               </div>
@@ -100,10 +100,10 @@ const ProductSection = () => {
               </div>
               <div className="product-price">200$</div>
               <div className="preferences">
-                <a className="add-to-favorites" href="/">
+                <a className="add-to-favorites" href="/favorites">
                   <i className="fas fa-heart"></i>
                 </a>
-                <a className="add-to-card" href="/">
+                <a className="add-to-card" href="/shoopingCart">
                   <i className="fas fa-shopping-cart"></i>
                 </a>
               </div>
@@ -126,10 +126,10 @@ const ProductSection = () => {
               </div>
               <div className="product-price">200$</div>
               <div className="preferences">
-                <a className="add-to-favorites" href="/">
+                <a className="add-to-favorites" href="/favorites">
                   <i className="fas fa-heart"></i>
                 </a>
-                <a className="add-to-card" href="/">
+                <a className="add-to-card" href="/shoopingCart">
                   <i className="fas fa-shopping-cart"></i>
                 </a>
               </div>

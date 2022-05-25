@@ -42,18 +42,18 @@ const Navbar = () => {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/favorites" className="nav-links" onClick={closeMobileMenu}>
                 <i className="fas fa-heart"></i>
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/shoopingCart" className="nav-links" onClick={closeMobileMenu}>
                 <i className="fas fa-shopping-cart"></i>
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                to="/add-product"
+                to="/addProduct"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
