@@ -20,6 +20,9 @@ const SoopingCart = () => {
             <i className="fas fa-minus"></i>
           </span>
           <span className="price">1 x 200$</span>
+          <span className="remove">
+            <i className="fas fa-times"></i>
+          </span>
         </div>
 
         <div className="product-container">
@@ -37,6 +40,9 @@ const SoopingCart = () => {
             <i className="fas fa-minus"></i>
           </span>
           <span className="price">1 x 200$</span>
+          <span className="remove">
+            <i className="fas fa-times"></i>
+          </span>
         </div>
 
         <div className="product-container">
@@ -54,10 +60,14 @@ const SoopingCart = () => {
             <i className="fas fa-minus"></i>
           </span>
           <span className="price">1 x 200$</span>
+          <span className="remove">
+            <i className="fas fa-times"></i>
+          </span>
         </div>
-
         <div className="product-container white">
-          <span className="total"><span className="black">Total:</span> 2000$</span>
+          <span className="total">
+            <span className="black">Total:</span> 2000$
+          </span>
         </div>
       </div>
     </>

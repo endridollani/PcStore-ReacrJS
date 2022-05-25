@@ -15,23 +15,87 @@
   padding-top: 2rem;
 }
 
-.shooping-cart{
+.shooping-cart {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 5rem;
 }
-@media screen and (max-width: 960px) {
 
-  .home{
+.add-product {
+  padding: 5rem;
+  height: 100vh;
+}
+
+.add-product > form {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.label-title {
+  padding: 1rem 0;
+  font-family: "Poppins", sans-serif;
+  font-size: larger;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  color:#dd422a
+}
+.add-product input {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.select-category{
+  width: 10%;
+  padding: 0 0 1rem 0;
+}
+#photo-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+#photo-input::before {
+  content: 'Select some files';
+  display: inline-block;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+#photo-input:hover::before {
+  border-color: black;
+}
+#photo-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+#submit-input {
+  margin-top: 1rem;
+}
+.view-products {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  justify-content: space-between;
+  padding: 2rem 10rem;
+}
+
+@media screen and (max-width: 960px) {
+  .home {
     flex-direction: column;
     justify-content: center;
   }
-
-  .shooping-cart{
-    justify-content:flex-start;
+  .add-product input{
+    width: 80%;
   }
-
+  .shooping-cart {
+    justify-content: flex-start;
+  }
 }
-

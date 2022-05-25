@@ -37,7 +37,9 @@
   padding-top: 1rem;
 }
 .preferences {
-  width: 100%;
+  display: inline-block;
+  align-items: center;
+  margin-top: 1rem;
 }
 .img-container {
   padding: 0;
