@@ -1,0 +1,78 @@
+.product-container {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #bdb1b15d;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+.product-container + .white {
+    background-color: #fff;
+}
+.total {
+    font-size: larger;
+    font-weight: 600;
+    color: #dd422a;
+}
+.black {
+    color: black;
+}
+.product-img > img {
+  width: 10rem;
+  height: 10rem;
+  margin-right: 1rem;
+}
+
+.description {
+  display: block;
+  margin-right: 1rem;
+}
+
+.add,
+.substract {
+  margin-right: 1rem;
+  background-color: #dd422a5a;
+  padding: 0.6rem 1rem;
+}
+
+/* @media (min-width: 600px) {
+  .product-container > div {
+    display: flex;
+    flex-direction: column wrap;
+  }
+}
+
+@media (min-width: 900px) {
+  .product-container {
+    flex-direction: column wrap;
+  }
+} */
+
+@media screen and (max-width: 960px) {
+  .product-container {
+    display: flex;
+    flex-direction: column wrap;
+    flex-flow: column;
+    padding: 1rem;
+  }
+
+  .product-img > img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .description{
+      margin-bottom: 1rem;
+      text-align: center;
+  }
+  .add,
+  .substract {
+    margin-bottom: 1rem;
+    background-color: #dd422a5a;
+    padding: 0.6rem 1rem;
+  }
+}

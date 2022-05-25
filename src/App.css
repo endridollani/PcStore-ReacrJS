@@ -15,11 +15,22 @@
   padding-top: 2rem;
 }
 
+.shooping-cart{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
 @media screen and (max-width: 960px) {
 
   .home{
     flex-direction: column;
     justify-content: center;
+  }
+
+  .shooping-cart{
+    justify-content:flex-start;
   }
 
 }
