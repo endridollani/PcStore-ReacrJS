@@ -1,7 +1,9 @@
 import "./CategorySection.css";
 import "../App.css";
+import useCategories from '../hooks/useCategories'
 
 const CategorySection = ()=> {
+  const cats = useCategories();
 
     return (
       <>
@@ -9,27 +11,21 @@ const CategorySection = ()=> {
           <h1 className="category-title">CATEGORIES</h1>
           <span className="title-underline"></span>
           <div className="category-list-container">
-            <ul class="menu">
-              <li>
-                  <span className="title">Desktop</span>
-                <ul>
-                  <li>
-                    <a href="/">All-In-One PC</a>
-                  </li>
-                  <li>
-                    <a href="/">Assembled by PC Store</a>
-                  </li>
-                  <li>
-                    <a href="/">Brand New</a>
-                  </li>
-                  <li>
-                    <a href="/">Gamming PC</a>
-                  </li>
-                  <li>
-                    <a href="/">Workstation</a>
-                  </li>
-                </ul>
-              </li>
+            <ul className="menu">
+                  {cats.map((cat)=>{
+                    return (<li>
+                      <a href={`/products/cat/${cat.id}`} className="title">{cat.name}</a>
+                      <ul>
+                        {cat.sub_categories.map((subCat) => {
+                          return (
+                            <li>
+                              <span className="subcategory">{subCat.name}</span>
+                            </li>
+                          )
+                        })}
+                      </ul>
+                    </li>)
+                  })}
             </ul>
           </div>
         </div>

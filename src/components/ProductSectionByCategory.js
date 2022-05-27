@@ -1,11 +1,14 @@
 import React from "react";
 import "./ProductSection.css";
 import "../App.css";
-import useProducts from "../hooks/useProducts";
+import useProductsByCategory from "../hooks/useProductsByCategory";
 import { addToCart } from "../helpers/cart";
+import { useParams } from "react-router-dom";
 
 const ProductSection = () => {
-  const products = useProducts();
+  const params = useParams();
+  const categoryId = params.categoryId;
+  const products = useProductsByCategory(categoryId);
 
   return (
     <div className="products">

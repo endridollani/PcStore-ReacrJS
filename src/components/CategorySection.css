@@ -48,7 +48,7 @@
   padding-left: 1rem;
 }
 
-.menu ul li a {
+.menu ul li a .subcategory {
   width: 100%;
 }
 
@@ -60,6 +60,9 @@
 .menu li:hover ul,
 .menu li:hover ul li ul {
   display: block;
+}
+.subcategory {
+  margin-left: 1rem;
 }
 @media screen and (max-width: 960px) {
   .menu {

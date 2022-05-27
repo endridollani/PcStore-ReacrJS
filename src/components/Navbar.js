@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { countCartItems } from "../helpers/cart";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -41,10 +42,14 @@ const Navbar = () => {
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-           
             <li className="nav-item">
-              <Link to="/shoopingCart" className="nav-links" onClick={closeMobileMenu}>
-                <i className="fas fa-shopping-cart"></i>
+              <Link
+                to="/shoopingCart"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                <i className="fas fa-shopping-cart"></i>&nbsp;{" "}
+                {countCartItems()}
               </Link>
             </li>
             <li className="nav-item">
@@ -53,13 +58,41 @@ const Navbar = () => {
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
-                Add <i className="fas fa-plus"></i>
+                Shto Produkt <i className="fas fa-plus"></i>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/addCategory"
+                className="nav-links-mobile"
+                onClick={closeMobileMenu}
+              >
+                Shto Kategori <i className="fas fa-plus"></i>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/addSubCategory"
+                className="nav-links-mobile"
+                onClick={closeMobileMenu}
+              >
+                Shto Sub Kategori <i className="fas fa-plus"></i>
               </Link>
             </li>
           </ul>
           {button && (
-            <Button buttonStyle="btn--outline">
-              <i className="fas fa-plus"></i>
+            <Button to={"/addProduct"} buttonStyle="btn--outline">
+              <i className="fas fa-plus"></i> Shto Produkt
+            </Button>
+          )}
+          {button && (
+            <Button to={"/addCategory"} buttonStyle="btn--outline">
+              <i className="fas fa-plus"></i> Shto Kategori
+            </Button>
+          )}
+          {button && (
+            <Button to={"/addSubCategory"} buttonStyle="btn--outline">
+              <i className="fas fa-plus"></i> Shto Sub Kategori
             </Button>
           )}
         </div>
